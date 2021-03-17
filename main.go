@@ -7,8 +7,7 @@ import (
 
 func main() {
 	log.SetFlags(log.Lshortfile | log.LstdFlags)
-	const newYorkTimeZone = "EST"
-	//newYorkLoc, err := time.LoadLocation(newYorkTimeZone)
+	const newYorkTimeZone = "America/New_York"
 	newYorkLoc, err := time.LoadLocation(newYorkTimeZone)
 	if err != nil {
 		log.Printf("error: %+v\n", err)
